@@ -3,7 +3,7 @@ package com.capgemini.hanoi;
 public class Hanoi {
 	
 	//tablica przechowująca aktualny stan trzech slupkow
-	int[][] rods = new int[0][0];
+	private int[][] rods = new int[0][0];
 	
 	//inicjalizacja slupkow, n jako liczba krazkow
 	public int[][] initialize(int n) {
@@ -74,6 +74,14 @@ public class Hanoi {
 	public boolean are_finished() {
 		if (rods[2][0] == 1 || rods[1][0] == 1) return true; //warunek zakonczenia gry
 		else return false;
+	}
+	
+	public int getRods(int x, int y) {
+		return rods[x][y];
+	}
+	
+	public void setRods(int x, int y, int value) {
+		rods[x][y] = value;
 	}
 
 }

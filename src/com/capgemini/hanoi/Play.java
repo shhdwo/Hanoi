@@ -42,7 +42,7 @@ public class Play {
 			System.out.println("Na ktora wieze chcesz go przeniesc? (1,2,3)");
 			int b = in.nextInt();
 			
-			for (int i = 0; i < 50; ++i) System.out.println(); //czyszczenie konsoli
+			for (int i = 0; i < 50; ++i) System.out.println(); //niby czyszczenie konsoli
 			
 			towers.move_disk(a,b);
 		
