@@ -30,7 +30,6 @@ public class Play {
 		}
 	}
 		
-		
 	//glowna petla w trakcie rozgrywki
 	public void playIt(Scanner in, Hanoi towers) {
 		do {
@@ -42,13 +41,10 @@ public class Play {
 			System.out.println("Na ktora wieze chcesz go przeniesc? (1,2,3)");
 			int b = in.nextInt();
 			
-			for (int i = 0; i < 50; ++i) System.out.println(); //niby czyszczenie konsoli
-			
-			towers.move_disk(a,b);
-		
+			for (int i = 0; i < 50; ++i) System.out.println(); //niby czyszczenie konsoli		
+			towers.move_disk(a,b);	
 		} while (!towers.are_finished());
 		
 		System.out.println("Gratulacje! Koniec gry!");
 	}
-
 }
